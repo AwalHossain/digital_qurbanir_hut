@@ -1,0 +1,172 @@
+/* ==================fonts============== */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap');
+
+
+body{
+   font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+.logo{
+max-width: 70%;
+ 
+}
+
+/*---------------- Nav item-------------- */
+.nav-item{
+    padding-left: 15px;  
+}
+.nav-item:first-child{
+    padding-left:40px ;
+}
+.item-link{
+    font-size: 1.1em;
+    color: black !important;
+    
+}
+
+.item-link:hover{
+    color: red !important;
+}
+.fa-user{
+    font-size: 1.5em;
+    color: red;
+}
+
+.catagory{
+    padding-top: 95px;
+    padding-bottom: 25px;
+}
+.safe-header{
+    font-size: 43px;
+    font-weight: 700;
+    color: red;
+}
+
+.safe-catagory{
+    font-size: 43px;
+    font-weight: 700;
+    margin: 45px 0;
+}
+
+.animal-icon img{
+    width: 50px;
+}
+
+.border-rads{
+    width: 70px;
+    height: 70px;
+   border-radius: 50% !important;
+}
+
+
+.animal-icon:hover{
+    background-color: red !important;
+  
+}
+
+
+/*========================= Photo Album================== */
+.photo-album{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+
+    }
+    .container-flex{
+padding: 0;
+overflow: hidden !important;
+       
+    }
+    .photo-frame{
+        width: auto;
+       
+        border: 3px solid rebeccapurple;
+        border-radius: 15px;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .photo img{
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+      
+    }
+    .phot-detailed{
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        top: 0;
+        color: white;
+       
+    }
+    .photo-frame:hover .phot-detailed{
+        display: block;
+        margin-top: 45px;
+       
+       
+    
+        background-color: rgba(238, 186, 181, 0.411);
+        
+    }
+    .photo-frame:hover img{
+        transform: scale(1.1) ;
+        transition: transform ease 2s;
+        overflow: hidden;
+    }
+.fs-2{
+    font-weight: 600;
+}
+.bg-color{
+    background-color: black;
+    color: white;
+}
+
+hr{
+width: 130px;
+}
+    @media(min-width:540px) and (max-width:767px){
+        body{
+            width: 100% !important;
+        }
+        .photo-album{
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 15px;
+
+            } 
+    }
+
+    @media(min-width:768px) and (max-width:1024px){
+        .photo-album{
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 15px;
+
+            } 
+            .photo-frame:hover .phot-detailed{
+                display: block;
+                margin-top: 25px;
+               
+               
+            
+                background-color: rgba(238, 186, 181, 0.411);
+                
+            }
+    }
+
+    @media(min-width:140px) and (max-width:539px){
+        .photo-album{
+
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 15px;
+            } 
+    }
